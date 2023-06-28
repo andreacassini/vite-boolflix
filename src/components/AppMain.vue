@@ -30,7 +30,7 @@
 .container{
     .row{
         .cards{
-            border: 1px solid black;
+            border: 1px solid white;
             padding: 5em 1em;
             text-align: center;
         }
