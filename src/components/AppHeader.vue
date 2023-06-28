@@ -17,7 +17,7 @@
             </div>
             <div class="col input-group">
                 <input type="search" class="form-control" v-model="store.search" @change="$emit('search')">
-                <button type="button" class="btn btn-light">
+                <button type="button" class="btn btn-light" @click="$emit('search')">
                       <i class="fas fa-search"></i>
                 </button>
             </div>
