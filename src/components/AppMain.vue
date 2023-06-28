@@ -28,11 +28,14 @@
 
 <style lang="scss" scoped>
 .container{
+
     .row{
+        justify-content: center;
         .cards{
-            border: 1px solid white;
-            padding: 5em 1em;
+            margin: 1em;
+            padding: 4em 1em;
             text-align: center;
+            background-color: rgba(0, 0, 0, 0.651);
         }
     }
 }
