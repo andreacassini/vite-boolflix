@@ -1,22 +1,22 @@
 <script>
-  import { store } from '../store.js';
-  import AppCard from './AppCard.vue';
+    import { store } from '../store.js';
+    import AppCard from './AppCard.vue';
 
-  export default {
-    components: {
-      AppCard
-    },
-    data() {
-      return {
-        store,
-      }
-    },
+    export default {
+        data() {
+            return {
+                store
+            }
+        },
+        components:{
+            AppCard
+        }
 }
 </script>
 
 <template>
   <div>
-    
+
   </div>
 </template>
 
