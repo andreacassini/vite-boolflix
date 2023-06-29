@@ -19,9 +19,10 @@ export default {
        <div class="content">
             <h2 class="mb-3">{{ film.title || film.original_name }}</h2>
             <h4 class="mb-3">{{ film.original_title || film.original_name}}</h4>
-            <h6 class="mb-3">Lang: <img :src="'../../public/' + film.original_language + '_16.png'" :alt="film.original_language"></h6>
-            <p><strong>{{ film.vote_average }}</strong></p>
+            <h6 class="mb-3">Lang: <img :src="'../../public/' + film.original_language + '_16.png'" :alt=" film.original_language"></h6>
+            <p><strong>Rating: {{ film.vote_average }}</strong></p>
             <p>Category: {{ film.media_type }}</p>
+            <p><strong>Overview: </strong>{{ film.overview }}</p>
        </div>
        
     </div> 
@@ -50,7 +51,8 @@ export default {
     left: 0;
     right: 0;
     height: 100%;
-    padding: 1em;
+    padding: 1.5em;
+    overflow-y: auto;
 }
 
 </style>
