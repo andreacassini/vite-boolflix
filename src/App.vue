@@ -23,9 +23,9 @@
           myUrl += `&query=${store.search}`;
         }
 
-        /* INSERISCO I DATI DI AXIOS */
+        /* FACCIO CHIAMATA */
         axios.get(myUrl).then((response) => {
-          store.list =response.data.results;
+          store.list = response.data.results;
         });
       }
     }}

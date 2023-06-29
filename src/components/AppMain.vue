@@ -18,7 +18,7 @@
   <div>
     <div class="container pt-5">
         <div class="row">
-            <div class="col-2 cards" v-for="(film, index) in store.list" :key="index">
+            <div class="col-4 cards" v-for="(film, index) in store.list" :key="index">
                 <AppCard :film="film"/>
             </div> 
         </div>
@@ -29,11 +29,10 @@
 <style lang="scss" scoped>
 .container{
 
-    .row{
-        justify-content: center;
+    .row{     
+           width: 100%;
+           margin: 0 auto;
         .cards{
-            margin: 1em;
-            padding: 4em 1em;
             text-align: center;
             background-color: rgba(0, 0, 0, 0.651);
         }
